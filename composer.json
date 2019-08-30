@@ -1,0 +1,15 @@
+{
+	"name": "goaround/gutenberg-gallery-lightbox",
+	"description": "Adds a Lightbox to the Gutenberg Gallery Block",
+	"type": "wordpress-plugin",
+	"keywords": ["wordpress", "gutenberg"],
+	"license": "GPL-2.0-or-later",
+	"authors": [{
+		"name": "Johannes Kinast",
+		"email": "johannes@travel-dealz.de"
+	}],
+	"homepage": "https://go-around.de",
+	"require": {
+		"composer/installers": "^1.0"
+	}
+}
