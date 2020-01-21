@@ -5,7 +5,7 @@
  * Description:  Adds a Lightbox to the Gutenberg Gallery Block.
  * Author:       Johannes Kinast <johannes@travel-dealz.de>
  * Author URI:   https://go-around.de
- * Version:     1.0.0
+ * Version:     1.1.0
  */
 
 
