@@ -16,11 +16,10 @@ function gutenberg_gallery_lightbox_register () {
 	wp_register_style( 'gutenberg-gallery-lightbox-css', plugin_dir_url( __FILE__ ) . '/dist/baguetteBox.min.css', [], '1.11.0' );
 }
 
-add_filter( 'the_content', 'gutenberg_gallery_lightbox_enqueue' );
-function gutenberg_gallery_lightbox_enqueue( $content ) {
-	if ( false !== strpos( $content, 'wp-block-gallery' ) ) {
+add_action( 'wp_enqueue_scripts', 'gutenberg_gallery_lightbox_enqueue' );
+function gutenberg_gallery_lightbox_enqueue() {
+	if ( has_block( 'gallery' ) ) {
 		wp_enqueue_script( 'gutenberg-gallery-lightbox' );
 		wp_enqueue_style( 'gutenberg-gallery-lightbox-css' );
 	}
-	return $content;
 }
