@@ -1,8 +1,8 @@
 {
-	"name": "goaround/gutenberg-gallery-lightbox",
-	"description": "Adds a Lightbox to the Gutenberg Gallery Block",
+	"name": "goaround/gallery-block-lightbox",
+	"description": "Adds a Lightbox to the Block Editor (Gutenberg) Gallery Block",
 	"type": "wordpress-plugin",
-	"keywords": ["wordpress", "gutenberg"],
+	"keywords": ["wordpress", "block editor", "gutenberg"],
 	"license": "GPL-2.0-or-later",
 	"authors": [{
 		"name": "Johannes Kinast",
