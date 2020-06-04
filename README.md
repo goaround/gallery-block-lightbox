@@ -26,7 +26,7 @@ Here are the features of baguetteBox.js:
 
 ## Frequently Asked Questions
 
-### When I click on a image, nothing happens
+### When I click on an image, nothing happens
 
 Check if you used the built in Gallery Block and if *Link to* is set to *Media File* in the *Block* sidebar.
 
