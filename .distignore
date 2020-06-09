@@ -6,3 +6,4 @@
 .gitignore
 composer.json
 composer.lock
+README.md
