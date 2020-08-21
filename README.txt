@@ -1,4 +1,4 @@
-=== Gallery Block Lightbox ===
+=== Lightbox for the Default Gallery Block (Simple, Lightweight & No Lock In) ===
 Contributors: goaroundagain
 Donate link:
 Tags: gallery, lightbox, block editor, gutenberg, multisite, block
