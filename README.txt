@@ -1,7 +1,7 @@
 === Lightbox for the Default Gallery Block (Simple, Lightweight & No Lock In) ===
 Contributors: goaroundagain
 Donate link:
-Tags: gallery, lightbox, block editor, gutenberg, multisite, block
+Tags: gallery, lightbox, block, block editor, gutenberg
 Requires at least: 5.4
 Tested up to: 5.5
 Requires PHP: 5.3
