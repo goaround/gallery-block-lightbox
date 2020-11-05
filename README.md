@@ -47,8 +47,10 @@ Set *Media File* to *None*.
 
 ## Changelog
 
+### 1.2.0
+
+- Support HTML for the Caption
+
 ### 1.0.0
 
 First release
-
-
