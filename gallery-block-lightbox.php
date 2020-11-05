@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name:  Gallery Block Lightbox
+ * Plugin Name:  Gallery & Image Block Lightbox
  * Plugin URI:
- * Description:  Adds a Lightbox to the Block Editor (Gutenberg) Gallery Block.
+ * Description:  Adds a Lightbox to the Block Editor (Gutenberg) Gallery & Image Block.
  * Author:       Johannes Kinast <johannes@travel-dealz.de>
  * Author URI:   https://go-around.de
- * Version:     1.2.0
+ * Version:     1.3.0
  */
 namespace Gallery_Block_Lightbox;
 
