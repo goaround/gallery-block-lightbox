@@ -47,6 +47,10 @@ Set *Media File* to *None* or remove the Link.
 
 ## Changelog
 
+### 1.3.1
+
+- Remove trailing slash from register_script/style
+
 ### 1.3.0
 
 - Support for the default Image Block
