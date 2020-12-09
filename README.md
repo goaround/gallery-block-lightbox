@@ -45,6 +45,8 @@ Set *Media File* to *None* or remove the Link.
 1. Set *Link to* to *Media File* on your Gallery Block
 ![Set Link to to Media File](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-2.png)
 
+If you would like to have this as a default behaviour, go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
+
 ## Changelog
 
 ### 1.3.1
