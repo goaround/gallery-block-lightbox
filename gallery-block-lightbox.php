@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:  Gallery & Image Block Lightbox
+ * Plugin Name:  Lightbox for Gallery & Image Block
  * Plugin URI:
  * Description:  Adds a Lightbox to the Block Editor (Gutenberg) Gallery & Image Block.
  * Author:       Johannes Kinast <johannes@travel-dealz.de>
