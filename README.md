@@ -51,7 +51,7 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ### 1.4.0
 
-- Add support for .svg Images
+- Add support for .svg images
 
 ### 1.3.1
 
