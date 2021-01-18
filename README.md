@@ -49,6 +49,10 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+### 1.4.0
+
+- Add support for .svg images
+
 ### 1.3.1
 
 - Remove trailing slash from register_script/style
