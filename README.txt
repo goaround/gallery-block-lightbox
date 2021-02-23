@@ -43,7 +43,7 @@ Check if you used the built in Gallery Block and if *Link to* is set to *Media F
 
 If you would like to have this as a default behaviour go to *yourblog.com/wp-admin/options.php* and search for *image_default_link_type*. Set the value to *file* and hit save. This will apply to all new Image & Gallery Blocks.
 
-= Does it work for singe images? =
+= Does it work for single images? =
 
 Yes! Just set the Link at the *Toolbar* to *Media File*
 
