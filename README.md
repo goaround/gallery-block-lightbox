@@ -30,7 +30,7 @@ Here are the features of baguetteBox.js:
 
 Check if you used the built in Gallery Block and if *Link to* is set to *Media File* in the *Block* sidebar. On an Image Block choose *Add Link* at the *Toolbar*.
 
-### Does it work for singe images?
+### Does it work for single images?
 
 Yes! Just set the Link at the *Toolbar* to *Media File*
 
