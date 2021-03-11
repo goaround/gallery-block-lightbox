@@ -17,6 +17,15 @@ Here are the features of baguetteBox.js:
 - Supports swipe gestures
 - Around 13 KB, 7 KB gzipped
 
+## Works with
+
+* Gallery Block (Default Block)
+* Image Block (Default Block)
+* Gallery (Default Classic Editor Gallery)
+* CoBlocks Gallery Collage / Masonry / Offset / Stacked
+
+Don't forget to select Link to → Media File for all of your Galleries & Images to work properly.
+
 ## Installation
 
 1. Upload the folder `gallery-block-lightbox` to the `/wp-content/plugins/` directory
