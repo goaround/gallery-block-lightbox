@@ -49,6 +49,10 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+### 1.6.0
+
+- Add support for CoBlocks Gallery Collage / Masonry / Offset / Stacked
+
 ### 1.5.0
 
 - Add support for Classic Editor Gallery

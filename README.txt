@@ -3,7 +3,7 @@ Contributors: goaroundagain
 Donate link:
 Tags: gallery, image, lightbox, block, block editor, gutenberg
 Requires at least: 5.4
-Tested up to: 5.6
+Tested up to: 5.7
 Requires PHP: 5.3
 Stable tag: trunk
 License: GPLv2 or later
@@ -59,6 +59,10 @@ Set *Media File* to *None* or remove the Link.
 == Changelog ==
 
 Hint: With WordPress 5.6 you can set the default behaviour for *Link to*. Go to *yourblog.com/wp-admin/options.php* and search for *image_default_link_type*. Set the value to *file* and hit save. This will apply to all new Image & Gallery Blocks.
+
+= 1.6.0 =
+
+- Add support for CoBlocks Gallery Collage / Masonry / Offset / Stacked
 
 = 1.5.0 =
 
