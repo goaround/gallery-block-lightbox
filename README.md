@@ -21,6 +21,7 @@ Here are the features of baguetteBox.js:
 
 * Gallery Block (Default Block)
 * Image Block (Default Block)
+* Media and Image Block (Default Block)
 * Gallery (Default Classic Editor Gallery)
 * CoBlocks Gallery Collage / Masonry / Offset / Stacked
 
@@ -57,6 +58,10 @@ Set *Media File* to *None* or remove the Link.
 If you would like to have this as a default behaviour, go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
 
 ## Changelog
+
+### 1.7.0
+
+- Add support for Media and Text Block
 
 ### 1.6.0
 
