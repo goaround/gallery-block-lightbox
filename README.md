@@ -59,6 +59,10 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+### 1.8.0
+
+- Add support for .avif, .heif/.heic, .tif
+
 ### 1.7.0
 
 - Add support for Media and Text Block
