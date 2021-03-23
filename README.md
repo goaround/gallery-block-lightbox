@@ -59,6 +59,10 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+### 1.8.1
+
+- Fix image link filter
+
 ### 1.8.0
 
 - Add support for .avif, .heif/.heic, .tif
