@@ -59,6 +59,10 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+### 1.8.2
+
+- Add support for file links with query parameter at the end
+
 ### 1.8.1
 
 - Fix image link filter
