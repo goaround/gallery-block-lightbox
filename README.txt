@@ -70,7 +70,11 @@ Set *Media File* to *None* or remove the Link.
 
 Hint: With WordPress 5.6 you can set the default behaviour for *Link to*. Go to *yourblog.com/wp-admin/options.php* and search for *image_default_link_type*. Set the value to *file* and hit save. This will apply to all new Image & Gallery Blocks.
 
-### 1.8.2
+= 1.8.3 =
+
+- Fix Regex Filter
+
+= 1.8.2 =
 
 - Add support for file links with query parameter at the end
 
