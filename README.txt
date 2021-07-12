@@ -3,7 +3,7 @@ Contributors: goaroundagain
 Donate link:
 Tags: gallery, image, lightbox, block, block editor, gutenberg
 Requires at least: 5.4
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 5.3
 Stable tag: trunk
 License: GPLv2 or later
