@@ -59,6 +59,10 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+### 1.8.5
+
+- Fix Caption for the single Image Block
+
 ### 1.8.4
 
 - Add Caption Support for the Classic Editor Gallery

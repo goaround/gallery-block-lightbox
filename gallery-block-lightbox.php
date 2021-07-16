@@ -5,7 +5,7 @@
  * Description:  Adds a Lightbox to the Block Editor (Gutenberg) Gallery & Image Block.
  * Author:       Johannes Kinast <johannes@travel-dealz.de>
  * Author URI:   https://go-around.de
- * Version:     1.8.4
+ * Version:     1.8.5
  */
 namespace Gallery_Block_Lightbox;
 
