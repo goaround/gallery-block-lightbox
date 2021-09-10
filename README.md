@@ -59,6 +59,10 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+### 1.9.0
+
+- Support new Gallery Block format (will be released with WordPress 5.9 in December 2021) https://make.wordpress.org/core/2021/08/20/gallery-block-refactor-dev-note/
+
 ### 1.8.5
 
 - Fix Caption for the single Image Block

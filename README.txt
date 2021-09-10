@@ -70,6 +70,10 @@ Set *Media File* to *None* or remove the Link.
 
 Hint: With WordPress 5.6 you can set the default behaviour for *Link to*. Go to *yourblog.com/wp-admin/options.php* and search for *image_default_link_type*. Set the value to *file* and hit save. This will apply to all new Image & Gallery Blocks.
 
+= 1.9.0 =
+
+- Support new Gallery Block format (will be released with WordPress 5.9 in December 2021) https://make.wordpress.org/core/2021/08/20/gallery-block-refactor-dev-note/
+
 = 1.8.5 =
 
 - Fix Caption for the single Image Block
