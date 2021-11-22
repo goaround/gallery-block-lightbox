@@ -48,6 +48,10 @@ Yes! Just set the Link at the *Toolbar* to *Media File*
 
 Set *Media File* to *None* or remove the Link.
 
+### Is there a way to set the default Link to option to Media File?
+
+Since WordPress 5.6 you can now set the default behavior for *Link to*. Go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
+
 ## Screenshots
 
 1. Simple, modern and minimalistic Lightbox for your Gallery Block
