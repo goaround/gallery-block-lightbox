@@ -72,6 +72,10 @@ Since WordPress 5.6 you can now set the default behavior for *Link to*. Go to *y
 
 == Changelog ==
 
+= 1.10.0 =
+
+- Add two Filter baguettebox_selector for the baguetteBox.js CSS selector and baguettebox_filter for the baguetteBox.js file type RegExp filter
+
 = 1.9.0 =
 
 - Support new Gallery Block format (will be released with WordPress 5.9 in December 2021) https://make.wordpress.org/core/2021/08/20/gallery-block-refactor-dev-note/
