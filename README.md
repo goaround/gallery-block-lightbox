@@ -138,3 +138,4 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 ### 1.0.0
 
 First release
+
