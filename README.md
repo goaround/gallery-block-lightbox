@@ -72,8 +72,6 @@ Or you can add the follow snipped (WordPress 5.7+ / PHP 7.4+) to your functions.
 
 ### How can I add my own Block? / Can I change the CSS selector?
 
-selector 
-
 You can change the CSS selector to a gallery (or galleries) containing `<a>` tags used by [baguetteBox.js](https://github.com/feimosi/baguetteBox.js#api) with the `baguettebox_selector` filter:
 
 `apply_filter( 'baguettebox_selector', function($selector) { return $selector . ',.my-gallery'; } )`
