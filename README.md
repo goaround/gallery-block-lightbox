@@ -1,12 +1,26 @@
 # Gallery & Image Block Lightbox
 
+Stable tag: trunk
+Requires at least: 5.4
+Tested up to: 5.8
+Requires PHP: 5.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: gallery, image, lightbox, block, block editor, gutenberg
+Contributors: goaroundagain
+Donate link:
+
+Adds a simple & lightweight Lightbox to the standard WordPress Gallery & Image Block. No lock in and no dependencies.
+
+## Description
+
 This WordPress Plugin adds a simple & lightweight Lightbox to the standard WordPress Gallery & Image Block. It detects if a post contains a Gallery or Image Block and then loads & initialize [baguetteBox.js](https://github.com/feimosi/baguetteBox.js), a pure JavaScript Lightbox script without any dependencies and a modern minimal look.
 
 There is no lock in effect. It does not add a new Block Editor/Gutenberg Block and relies solo on the standard WordPress Gallery and Image Block. You can deactivate this plugin at any time and your Gallery and Image Blocks will work as they've done before. Just without the lightbox.
 
 Just **one important thing to remember**: You always have to select *Link to* → *Media File* for all of your Galleries & Images to work properly. If you choose *None* or *Attachment Page* it will not work. But that's fine if you don't want the Lightbox for a specific Image or Gallery.
 
-## Features
+### Features
 
 Here are the features of baguetteBox.js:
 
@@ -17,7 +31,7 @@ Here are the features of baguetteBox.js:
 - Supports swipe gestures
 - Around 13 KB, 7 KB gzipped
 
-## Works with
+### Works with
 
 * Gallery Block (Default Block)
 * Image Block (Default Block)
@@ -54,10 +68,8 @@ Since WordPress 5.6 you can now set the default behavior for *Link to*. Go to `y
 
 ## Screenshots
 
-1. Simple, modern and minimalistic Lightbox for your Gallery Block
-![Lightbox for the Gallery Block](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-1.png)
-1. Set *Link to* to *Media File* on your Gallery Block
-![Set Link to to Media File](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-2.png)
+1. Simple, modern and minimalistic Lightbox for your Gallery Block<br>![Lightbox for the Gallery Block](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-1.png)
+1. Set *Link to* to *Media File* on your Gallery Block<br>![Set Link to to Media File](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-2.png)
 
 If you would like to have this as a default behaviour, go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
 
