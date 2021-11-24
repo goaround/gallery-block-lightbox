@@ -1,14 +1,14 @@
 # Gallery & Image Block Lightbox
 
-Stable tag: trunk  
-Requires at least: 5.4  
-Tested up to: 5.8  
-Requires PHP: 5.3  
-License: GPLv2 or later  
-License URI: http://www.gnu.org/licenses/gpl-2.0.html  
-Tags: gallery, image, lightbox, block, block editor, gutenberg  
-Contributors: goaroundagain  
-Donate link:  
+- Stable tag: trunk
+- Requires at least: 5.4
+- Tested up to: 5.8
+- Requires PHP: 5.3
+- License: GPLv2 or later
+- License URI: http://www.gnu.org/licenses/gpl-2.0.html
+- Tags: gallery, image, lightbox, block, block editor, gutenberg
+- Contributors: goaroundagain
+- Donate link:
 
 Adds a simple & lightweight Lightbox to the standard WordPress Gallery & Image Block. No lock in and no dependencies.
 
