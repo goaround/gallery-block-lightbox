@@ -24,29 +24,29 @@ Just **one important thing to remember**: You always have to select *Link to* �
 
 Here are the features of baguetteBox.js:
 
-* Written in pure JavaScript
-* No dependencies (e.g. jQuery)
-* Image captions support
-* Responsive
-* Supports swipe gestures
-* Around 13 KB, 7 KB gzipped
+- Written in pure JavaScript
+- No dependencies (e.g. jQuery)
+- Image captions support
+- Responsive
+- Supports swipe gestures
+- Around 13 KB, 7 KB gzipped
 
 ### Works with
 
-* Gallery Block (Default Block)
-* Image Block (Default Block)
-* Media and Image Block (Default Block)
-* Gallery (Default Classic Editor Gallery)
-* CoBlocks Gallery Collage / Masonry / Offset / Stacked
+- Gallery Block (Default Block)
+- Image Block (Default Block)
+- Media and Image Block (Default Block)
+- Gallery (Default Classic Editor Gallery)
+- CoBlocks Gallery Collage / Masonry / Offset / Stacked
 
 Don't forget to select Link to → Media File for all of your Galleries & Images to work properly.
 
 ## Installation
 
 1. Upload the folder `gallery-block-lightbox` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Add a Gallery or Image Block to your Post and set *Link to* → *Media File*
-4. Check your Gallery or Image with Lightbox on the front end by clicking on an image
+1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Add a Gallery or Image Block to your Post and set *Link to* → *Media File*
+1. Check your Gallery or Image with Lightbox on the front end by clicking on an image
 
 ## Frequently Asked Questions
 
