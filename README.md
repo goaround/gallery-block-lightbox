@@ -66,9 +66,21 @@ Set *Media File* to *None* or remove the Link.
 
 Since WordPress 5.6 you can now set the default behavior for *Link to*. Go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
 
-Or you can add the follow snipped (PHP 7.4+) to your functions.php:
+Or you can add the follow snipped (WordPress 5.7+ / PHP 7.4+) to your functions.php:
 
 `add_filter('option_image_default_link_type', fn () => 'file');`
+
+### How can I add my own Block? / Can I change the CSS selector?
+
+selector 
+
+You can change the CSS selector to a gallery (or galleries) containing `<a>` tags used by [baguetteBox.js](https://github.com/feimosi/baguetteBox.js#api) with the `baguettebox_selector` filter:
+
+`apply_filter( 'baguettebox_selector', function($selector) { return $selector . ',.my-gallery'; } )`
+
+You can override the full selector by just returing your selector e.g. to show all images in your post in one lightbox (not per Gallery/Image Block):
+
+`apply_filter( 'baguettebox_selector', function() { return '.entry-content'; } )`
 
 ## Screenshots
 
