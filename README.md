@@ -66,6 +66,10 @@ Set *Media File* to *None* or remove the Link.
 
 Since WordPress 5.6 you can now set the default behavior for *Link to*. Go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
 
+Or you can add the follow snipped (PHP 7.4+) to your functions.php:
+
+`add_filter('option_image_default_link_type', fn () => 'file');`
+
 ## Screenshots
 
 1. Simple, modern and minimalistic Lightbox for your Gallery Block<br>![Lightbox for the Gallery Block](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-1.png)
