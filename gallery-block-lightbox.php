@@ -20,7 +20,7 @@ function register_assets() {
      *
      * @param string  $value  The CSS selector to a gallery (or galleries) containing a tags
      */
-	$baguettebox_selector = apply_filters('baguettebox_selector', '.wp-block-gallery,:not(.wp-block-gallery)>.wp-block-image,.wp-block-media-text,.gallery,.wp-block-coblocks-gallery-masonry,.wp-block-coblocks-gallery-stacked,.wp-block-coblocks-gallery-collage,.wp-block-coblocks-gallery-offset,.wp-block-coblocks-gallery-stacked' );
+	$baguettebox_selector = apply_filters('baguettebox_selector', '.wp-block-gallery,:not(.wp-block-gallery)>.wp-block-image,.wp-block-media-text__media,.gallery,.wp-block-coblocks-gallery-masonry,.wp-block-coblocks-gallery-stacked,.wp-block-coblocks-gallery-collage,.wp-block-coblocks-gallery-offset,.wp-block-coblocks-gallery-stacked' );
 
 	/**
      * Filters the image files filter of baguetteBox.js
