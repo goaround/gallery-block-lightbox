@@ -35,7 +35,7 @@ Here are the features of baguetteBox.js:
 
 - Gallery Block (Default Block)
 - Image Block (Default Block)
-- Media and Image Block (Default Block)
+- Media and Text Block (Default Block)
 - Gallery (Default Classic Editor Gallery)
 - CoBlocks Gallery Collage / Masonry / Offset / Stacked
 
