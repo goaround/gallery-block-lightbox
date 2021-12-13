@@ -89,6 +89,10 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+### 1.10.1
+
+- Fix Image in Media & Text Block
+
 ### 1.10.0
 
 - Add two Filter baguettebox_selector for the baguetteBox.js CSS selector and baguettebox_filter for the baguetteBox.js file type RegExp filter
@@ -152,4 +156,3 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 ### 1.0.0
 
 First release
-
