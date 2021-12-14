@@ -41,6 +41,8 @@ Here are the features of baguetteBox.js:
 
 Don't forget to select Link to → Media File for all of your Galleries & Images to work properly.
 
+**Notice**: At the moment, just Blocks inside a post are supported. Not Blocks in a Widget. You can make it work but have to enqueue the necessary style & script yourself. See *FAQ* --> *How to enqueue the necessary script & style for blocks outside of posts?*
+
 ## Installation
 
 1. Upload the folder `gallery-block-lightbox` to the `/wp-content/plugins/` directory
@@ -79,6 +81,18 @@ You can change the CSS selector to a gallery (or galleries) containing `<a>` tag
 You can override the full selector by just returing your selector e.g. to show all images in your post in one lightbox (not per Gallery/Image Block):
 
 `apply_filter( 'baguettebox_selector', function() { return '.entry-content'; } )`
+
+### How to enqueue the necessary script & style for blocks outside of posts?
+
+If you use a Gallery or Image Block outside a post e.g. inside a Widget and want to apply the Lightbox, you have to make sure to enqueue the necessary script & style.
+
+If the Widget is on every page or the majority of sites, you can just enqueue the script `baguettebox` & style `baguettebox-css` everywhere. Just add the following action to your `functions.php`:
+
+`add_action( 'wp_enqueue_scripts', function () { wp_enqueue_script( 'baguettebox' ); wp_enqueue_style( 'baguettebox-css' ); } );`
+
+If your Widget is just at the front page, you can add a check for `is_front_page()`:
+
+`add_action( 'wp_enqueue_scripts', function () { if ( is_front_page() ) { wp_enqueue_script( 'baguettebox' ); wp_enqueue_style( 'baguettebox-css' ); } } );`
 
 ## Screenshots
 
