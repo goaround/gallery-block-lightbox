@@ -1,4 +1,4 @@
-# Gallery & Image Block Lightbox
+# Lightbox for Gallery & Image Block
 
 - Stable tag: trunk
 - Requires at least: 5.4
