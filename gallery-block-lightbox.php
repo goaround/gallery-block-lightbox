@@ -5,7 +5,7 @@
  * Description:  Adds a Lightbox to the Block Editor (Gutenberg) Gallery & Image Block.
  * Author:       Johannes Kinast <johannes@travel-dealz.de>
  * Author URI:   https://go-around.de
- * Version:     1.10.2
+ * Version:     1.11
  */
 namespace Gallery_Block_Lightbox;
 
@@ -41,7 +41,7 @@ function enqueue_assets() {
 	/**
 	 * Filters whether baguettebox assets have to be enqueued.
 	 *
-	 * @since 1.10.2
+	 * @since 1.11
 	 *
 	 * @param bool  $value  Whether baguettebox assets have to be enqueued.
 	 */
