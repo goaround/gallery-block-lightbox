@@ -118,7 +118,7 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
-### 1.10.2
+### 1.11
 
 - Add filter baguettebox_enqueue_assets to control enqueing of baguettebox assets.
 
