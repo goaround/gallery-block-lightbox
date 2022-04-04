@@ -41,7 +41,7 @@ Here are the features of baguetteBox.js:
 
 Don't forget to select Link to → Media File for all of your Galleries & Images to work properly.
 
-**Notice**: At the moment, just Blocks inside a post are supported. Not Blocks in a Widget. You can make it work but have to enqueue the necessary style & script yourself. See *FAQ* --> *How to enqueue the necessary script & style for blocks outside of posts?*
+**Notice**: At the moment, just Blocks inside a post are supported. Not Blocks in a Widget. You can make it work but have to enqueue the necessary style & script yourself. See *FAQ* --> *How to enqueue the necessary assets (script & style) for blocks outside of posts or for block types that are not supported by default?*
 
 ## Installation
 
@@ -69,30 +69,45 @@ Set *Media File* to *None* or remove the Link.
 Since WordPress 5.6 you can now set the default behavior for *Link to*. Go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
 
 Or you can add the follow snipped (WordPress 5.7+ / PHP 7.4+) to your functions.php:
-
-`add_filter('option_image_default_link_type', fn () => 'file');`
+```
+add_filter( 'option_image_default_link_type', fn () => 'file' );
+```
 
 ### How can I add my own Block? / Can I change the CSS selector?
 
 You can change the CSS selector to a gallery (or galleries) containing `<a>` tags used by [baguetteBox.js](https://github.com/feimosi/baguetteBox.js#api) with the `baguettebox_selector` filter:
-
-`apply_filter( 'baguettebox_selector', function($selector) { return $selector . ',.my-gallery'; } )`
-
+```
+add_filter( 'baguettebox_selector', function( $selector ) { return $selector . ',.my-gallery'; } )
+```
 You can override the full selector by just returing your selector e.g. to show all images in your post in one lightbox (not per Gallery/Image Block):
+```
+add_filter( 'baguettebox_selector', function() { return '.entry-content'; } )
+```
 
-`apply_filter( 'baguettebox_selector', function() { return '.entry-content'; } )`
+### How to enqueue the necessary assets (script & style) for blocks outside of posts or for block types that are not supported by default?
 
-### How to enqueue the necessary script & style for blocks outside of posts?
+If you use a Gallery or Image Block outside a post e.g. inside a Widget and want to apply the Lightbox, you need to ensure that the required baguettebox assets (script & style) are queued using the baguettebox_enqueue_assets filter.
 
-If you use a Gallery or Image Block outside a post e.g. inside a Widget and want to apply the Lightbox, you have to make sure to enqueue the necessary script & style.
-
-If the Widget is on every page or the majority of sites, you can just enqueue the script `baguettebox` & style `baguettebox-css` everywhere. Just add the following action to your `functions.php`:
-
-`add_action( 'wp_enqueue_scripts', function () { wp_enqueue_script( 'baguettebox' ); wp_enqueue_style( 'baguettebox-css' ); } );`
-
-If your Widget is just at the front page, you can add a check for `is_front_page()`:
-
-`add_action( 'wp_enqueue_scripts', function () { if ( is_front_page() ) { wp_enqueue_script( 'baguettebox' ); wp_enqueue_style( 'baguettebox-css' ); } } );`
+If the Widget is on every page or the majority of pages, you can just enqueue the baguettebox assets everywhere. Just add the following snippet to `functions.php`:
+```
+add_filter( 'baguettebox_enqueue_assets', '__return_true' );
+```
+If your Widget is just at the front page, use `is_front_page()`:
+```
+add_filter( 'baguettebox_enqueue_assets', function( $enqueue_assets ) { return is_front_page(); } );
+```
+If you want to use the Gallery & Image Block Lightbox plugin with a block type that is not supported by default, you can make use of the `has_block()` function. For instance, in the case of the Kadence Blocks Advanced Gallery, use:
+```
+add_filter( 'baguettebox_enqueue_assets', function ( $enqueue_assets ) {
+	return $enqueue_assets || has_block( 'kadence/advancedgallery' );
+} );
+```
+Of course, in the previous example you also have to add the appropriate baguettebox selector, i.e.
+```
+add_filter( 'baguettebox_selector', function( $selector ) {
+	return $selector . ',.wp-block-kadence-advancedgallery';
+} );
+```
 
 ## Screenshots
 
@@ -102,6 +117,10 @@ If your Widget is just at the front page, you can add a check for `is_front_page
 If you would like to have this as a default behaviour, go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
 
 ## Changelog
+
+### 1.10.2
+
+- Add filter baguettebox_enqueue_assets to control enqueing of baguettebox assets.
 
 ### 1.10.1
 
