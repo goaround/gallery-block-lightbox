@@ -38,6 +38,7 @@ Here are the features of baguetteBox.js:
 - Media and Text Block (Default Block)
 - Gallery (Default Classic Editor Gallery)
 - CoBlocks Gallery Collage / Masonry / Offset / Stacked
+- Meow Gallery (+ Gallery Block)
 
 Don't forget to select Link to → Media File for all of your Galleries & Images to work properly.
 
@@ -117,6 +118,10 @@ add_filter( 'baguettebox_selector', function( $selector ) {
 If you would like to have this as a default behaviour, go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
 
 ## Changelog
+
+### 1.12
+
+- Support Meow Gallery (+ Gallery Block)
 
 ### 1.11
 
