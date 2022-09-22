@@ -54,7 +54,8 @@ function enqueue_assets() {
 		has_block( 'coblocks/gallery-stacked' ) ||
 		has_block( 'coblocks/gallery-collage' ) ||
 		has_block( 'coblocks/gallery-offset' ) ||
-		has_block( 'coblocks/gallery-stacked' )
+		has_block( 'coblocks/gallery-stacked' ) ||
+		has_block( 'meow-gallery/gallery' )
 	);
 
 	if ( $baguettebox_enqueue_assets ) {
