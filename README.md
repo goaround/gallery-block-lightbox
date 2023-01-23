@@ -39,6 +39,7 @@ Here are the features of baguetteBox.js:
 - Gallery (Default Classic Editor Gallery)
 - CoBlocks Gallery Collage / Masonry / Offset / Stacked
 - Meow Gallery (+ Gallery Block)
+- GenerateBlocks Image (Set `Enable Dynamic Data` → `Link source` to `Single image`)
 
 Don't forget to select Link to → Media File for all of your Galleries & Images to work properly.
 
@@ -118,6 +119,10 @@ add_filter( 'baguettebox_selector', function( $selector ) {
 If you would like to have this as a default behaviour, go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
 
 ## Changelog
+
+### 1.13
+
+- Support SenerateBlocks Image
 
 ### 1.12
 
