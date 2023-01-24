@@ -122,7 +122,7 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ### 1.13
 
-- Support SenerateBlocks Image
+- Support GenerateBlocks Image
 
 ### 1.12
 
