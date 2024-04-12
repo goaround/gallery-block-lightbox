@@ -6,7 +6,7 @@
 - Requires PHP: 5.3
 - License: GPLv2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
-- Tags: gallery, image, lightbox, block, block editor, gutenberg
+- Tags: gallery, image, lightbox, block, block editor
 - Contributors: goaroundagain
 - Donate link:
 
