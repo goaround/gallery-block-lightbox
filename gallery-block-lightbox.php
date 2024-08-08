@@ -31,7 +31,16 @@ function register_assets() {
 	 */
 	$baguettebox_filter = apply_filters( 'baguettebox_filter',  '/.+\.(gif|jpe?g|png|webp|svg|avif|heif|heic|tif?f|)($|\?)/i' );
 
-	wp_add_inline_script( 'baguettebox', 'window.addEventListener("load", function() {baguetteBox.run("' . $baguettebox_selector . '",{captions:function(t){var e=t.parentElement.classList.contains("wp-block-image")||t.parentElement.classList.contains("wp-block-media-text__media")?t.parentElement.querySelector("figcaption"):t.parentElement.parentElement.querySelector("figcaption,dd");return!!e&&e.innerHTML},filter:' . $baguettebox_filter . '});});' );
+	/**
+	 * Filters the ignoreClass attribute of baguetteBox.js
+	 *
+	 * @since 1.14
+	 *
+	 * @param string  $value  It will ignore images with given class put on a tag
+	 */
+	$baguettebox_ignoreclass = apply_filters( 'baguettebox_ignoreclass', 'no-lightbox' );
+
+	wp_add_inline_script( 'baguettebox', 'window.addEventListener("load", function() {baguetteBox.run("' . $baguettebox_selector . '",{captions:function(t){var e=t.parentElement.classList.contains("wp-block-image")||t.parentElement.classList.contains("wp-block-media-text__media")?t.parentElement.querySelector("figcaption"):t.parentElement.parentElement.querySelector("figcaption,dd");return!!e&&e.innerHTML},filter:' . $baguettebox_filter . ',ignoreClass:"' . $baguettebox_ignoreclass . '"});});' );
 
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\register_assets' );
