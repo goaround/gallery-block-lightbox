@@ -5,13 +5,13 @@
  * Description:  Adds a Lightbox to the Block Editor (Gutenberg) Gallery & Image Block.
  * Author:       Johannes Kinast <johannes@travel-dealz.de>
  * Author URI:   https://go-around.de
- * Version:     1.13
+ * Version:     1.14
  */
 namespace Gallery_Block_Lightbox;
 
 function register_assets() {
-	wp_register_style( 'baguettebox-css', plugin_dir_url( __FILE__ ) . 'dist/baguetteBox.min.css', [], '1.11.1' );
-	wp_register_script( 'baguettebox', plugin_dir_url( __FILE__ ) . 'dist/baguetteBox.min.js', [], '1.11.1', true );
+	wp_register_style( 'baguettebox-css', plugin_dir_url( __FILE__ ) . 'dist/baguetteBox.min.css', [], '1.12.0' );
+	wp_register_script( 'baguettebox', plugin_dir_url( __FILE__ ) . 'dist/baguetteBox.min.js', [], '1.12.0', true );
 
 	/**
 	 * Filters the CSS selector of baguetteBox.js
