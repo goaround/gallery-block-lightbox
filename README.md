@@ -120,6 +120,14 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+### 1.15
+
+- Add filter baguettebox_captions to change the JavaScript function to get the caption of an image
+
+### 1.14
+
+- Add the CSS class `.no-lightbox` to an <a> element to disable the lightbox
+
 ### 1.13
 
 - Support GenerateBlocks Image
