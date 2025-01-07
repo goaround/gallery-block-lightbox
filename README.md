@@ -18,7 +18,7 @@ This WordPress Plugin adds a simple & lightweight Lightbox to the standard WordP
 
 There is no lock in effect. It does not add a new Block Editor/Gutenberg Block and relies solo on the standard WordPress Gallery and Image Block. You can deactivate this plugin at any time and your Gallery and Image Blocks will work as they've done before. Just without the lightbox.
 
-Just **one important thing to remember**: You always have to select *Link to* → *Media File* for all of your Galleries & Images to work properly. If you choose *None* or *Attachment Page* it will not work. But that's fine if you don't want the Lightbox for a specific Image or Gallery.
+Just **one important thing to remember**: You always have to select *Link* → *Link to image file* or *Link images to media file* (see screenshots below) for all of your Image & Gallery Blocks to work properly. If you choose *None* or *Link to attachment page* it will not work. But that's fine if you don't want the Lightbox for a specific Image or Gallery.
 
 ### Features
 
@@ -114,7 +114,8 @@ add_filter( 'baguettebox_selector', function( $selector ) {
 ## Screenshots
 
 1. Simple, modern and minimalistic Lightbox for your Gallery Block<br>![Lightbox for the Gallery Block](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-1.png)
-1. Set *Link to* to *Media File* on your Gallery Block<br>![Set Link to to Media File](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-2.png)
+1. Set *Link* to *Link to image file* on your Image Block<br>![Link to image file](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-2.png)
+1. Set *Link* to *Link images to media file* on your Gallery Block<br>![Link to media file](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-3.png)
 
 If you would like to have this as a default behaviour, go to `yourblog.com/wp-admin/options.php` and search for `image_default_link_type`. Set the value to `file` and hit save. This will apply to all new Image & Gallery Blocks.
 
