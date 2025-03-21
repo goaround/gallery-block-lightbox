@@ -59,7 +59,10 @@ function register_assets() {
 	 */
 	$baguettebox_animation = apply_filters( 'baguettebox_animation', 'slideIn' );
 
-	wp_add_inline_script( 'baguettebox', 'window.addEventListener("load", function() {baguetteBox.run("' . $baguettebox_selector . '",{captions:' . $baguettebox_captions . ',filter:' . $baguettebox_filter . ',ignoreClass:"' . $baguettebox_ignoreclass . '",animation:"' . $baguettebox_animation . '"});});' );
+	$baguettebox_options = "{captions:{$baguettebox_captions},filter:{$baguettebox_filter},ignoreClass:'{$baguettebox_ignoreclass}',animation:'{$baguettebox_animation}'}";
+
+	wp_add_inline_script( "baguettebox", "window.addEventListener('load', function() {baguetteBox.run('{$baguettebox_selector}',{$baguettebox_options});});" );
+
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\register_assets' );
 
