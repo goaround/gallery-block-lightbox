@@ -123,6 +123,10 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ### 1.15
 
+- Add filter baguettebox_animation to choose between 'slideIn' | 'fadeIn' | 'false' animation styles on image transitions.
+
+### 1.15
+
 - Add filter baguettebox_captions to change the JavaScript function to get the caption of an image
 
 ### 1.14
