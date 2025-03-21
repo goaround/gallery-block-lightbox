@@ -111,6 +111,17 @@ add_filter( 'baguettebox_selector', function( $selector ) {
 } );
 ```
 
+### Can I change or disable the animation on image transitions?
+
+By default, baguetteBox.js shows a slide-in animation on image transitions. You can change it to the following filter to `'fadeIn'`:
+```
+add_filter( 'baguettebox_animation', function () { return 'fadeIn'; } );
+```
+Or disable the animation completely with `'false'`:
+```
+add_filter( 'baguettebox_animation', function () { return 'false'; } );
+```
+
 ## Screenshots
 
 1. Simple, modern and minimalistic Lightbox for your Gallery Block<br>![Lightbox for the Gallery Block](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-1.png)
