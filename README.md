@@ -20,6 +20,10 @@ There is no lock in effect. It does not add a new Block Editor/Gutenberg Block a
 
 Just **one important thing to remember**: You always have to select *Link* → *Link to image file* or *Link images to media file* (see screenshots below) for all of your Image & Gallery Blocks to work properly. If you choose *None* or *Link to attachment page* it will not work. But that's fine if you don't want the Lightbox for a specific Image or Gallery.
 
+Take a look at the [YouTube video from Jakson](https://youtu.be/qfLOH22cUNM) where he reviews this plugin:
+
+[![Watch the video](https://img.youtube.com/vi/qfLOH22cUNM/maxresdefault.jpg)](https://youtu.be/qfLOH22cUNM)
+
 ### Features
 
 Here are the features of baguetteBox.js:
