@@ -22,7 +22,7 @@ Just **one important thing to remember**: You always have to select *Link* → *
 
 Take a look at the [YouTube video from Jakson](https://youtu.be/qfLOH22cUNM) where he reviews this plugin:
 
-[![Watch the video](https://img.youtube.com/vi/qfLOH22cUNM/maxresdefault.jpg)](https://youtu.be/qfLOH22cUNM)
+https://www.youtube.com/watch?v=qfLOH22cUNM
 
 ### Features
 
