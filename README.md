@@ -43,7 +43,6 @@ Here are the features of baguetteBox.js:
 - Gallery (Default Classic Editor Gallery)
 - CoBlocks Gallery Collage / Masonry / Offset / Stacked
 - Meow Gallery (+ Gallery Block)
-- GenerateBlocks Image (Set `Enable Dynamic Data` → `Link source` to `Single image`)
 
 Don't forget to select Link to → Media File for all of your Galleries & Images to work properly.
 
