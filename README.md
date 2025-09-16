@@ -125,6 +125,10 @@ Or disable the animation completely with `'false'`:
 add_filter( 'baguettebox_animation', function () { return 'false'; } );
 ```
 
+### Can I exclude single images from applying the lightbox?
+
+You can remove the link from the image or add the CSS class `no-lightbox` to the image link. Not to the image directly; you have to add the class to the link.
+
 ## Screenshots
 
 1. Simple, modern and minimalistic Lightbox for your Gallery Block<br>![Lightbox for the Gallery Block](https://github.com/goaround/gallery-block-lightbox/blob/master/.wordpress-org/screenshot-1.png)
