@@ -8,8 +8,5 @@
 		"name": "Johannes Kinast",
 		"email": "johannes@travel-dealz.de"
 	}],
-	"homepage": "https://go-around.de",
-	"require": {
-		"composer/installers": "^1.0"
-	}
+	"homepage": "https://go-around.de"
 }
