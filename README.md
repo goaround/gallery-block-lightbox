@@ -139,6 +139,11 @@ If you would like to have this as a default behaviour, go to `yourblog.com/wp-ad
 
 ## Changelog
 
+
+### 1.16.1
+
+- No changes, just a version fix.
+
 ### 1.16
 
 - Add filter baguettebox_animation to choose between 'slideIn' | 'fadeIn' | 'false' animation styles on image transitions.
