@@ -9,6 +9,34 @@
  */
 namespace Gallery_Block_Lightbox;
 
+function is_js_function($value) {
+	return preg_match('/^function\s*\w*\s*\(/', $value);
+}
+
+function is_js_regex($value) {
+	return preg_match('/^\/.+\/([gimsuy]*)$/', $value);
+}
+
+function to_js_value($value){
+	if (is_string($value) && (is_js_function($value) || is_js_regex($value))) {
+		return $value;
+	}
+	return json_encode($value);
+}
+
+/**
+ * Build JavaScript object from PHP array
+ *
+ * This does not create a JSON object, because strings containing functions must be kept as JS functions.
+ * Therefore, `json_encode` can not be used directly.
+ */
+function php_array_to_js_object($array) {
+	$parts = array_map(function ($key, $value) {
+		return sprintf('%s: %s', $key, to_js_value($value));
+	}, array_keys($array), $array);
+	return '{' . implode(',', $parts) . '}';
+}
+
 function register_assets() {
 	wp_register_style( 'baguettebox-css', plugin_dir_url( __FILE__ ) . 'dist/baguetteBox.min.css', [], '1.12.0' );
 	wp_register_script( 'baguettebox', plugin_dir_url( __FILE__ ) . 'dist/baguetteBox.min.js', [], '1.12.0', true );
@@ -41,7 +69,7 @@ function register_assets() {
 	$baguettebox_ignoreclass = apply_filters( 'baguettebox_ignoreclass', 'no-lightbox' );
 
 	/**
-	 * Filters the captions  attribute of baguetteBox.js
+	 * Filters the captions attribute of baguetteBox.js
 	 *
 	 * @since 1.15
 	 *
@@ -59,9 +87,23 @@ function register_assets() {
 	 */
 	$baguettebox_animation = apply_filters( 'baguettebox_animation', 'slideIn' );
 
-	$baguettebox_options = "{captions:{$baguettebox_captions},filter:{$baguettebox_filter},ignoreClass:'{$baguettebox_ignoreclass}',animation:'{$baguettebox_animation}'}";
+	/**
+	 * Filters the options for baguetteBox.js
+     * For available options see https://github.com/feimosi/baguetteBox.js/?tab=readme-ov-file#customization
+     *
+     * @since 1.17
+     *
+     * @param array $options The customization options for baguetteBox
+	 */
+	$baguettebox_options = apply_filters( 'baguettebox_options', [
+		'captions' => $baguettebox_captions,
+		'filter' => $baguettebox_filter,
+		'ignoreClass' => $baguettebox_ignoreclass,
+		'animation' => $baguettebox_animation,
+	] );
+	$baguettebox_options_js = php_array_to_js_object($baguettebox_options);
 
-	wp_add_inline_script( "baguettebox", "window.addEventListener('load', function() {baguetteBox.run('{$baguettebox_selector}',{$baguettebox_options});});" );
+	wp_add_inline_script( "baguettebox", "window.addEventListener('load', function() {baguetteBox.run('{$baguettebox_selector}',{$baguettebox_options_js});});" );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\register_assets' );
 
